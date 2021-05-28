@@ -1,7 +1,5 @@
 package jpabook.jpashop.domain;
 
-import com.sun.tools.corba.se.idl.constExpr.Or;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +23,9 @@ public class Member {
     @OneToOne
     @JoinColumn(name = "LOCKER_ID")
     private Locker locker;
+
+    @OneToMany(mappedBy = "member")
+    private List<MemberProduct> memberProducts = new ArrayList<>();
 
     public long getId() {
         return id;

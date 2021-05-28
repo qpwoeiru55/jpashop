@@ -1,6 +1,5 @@
 package jpabook.jpashop.domain;
 
-import com.sun.tools.corba.se.idl.constExpr.Or;
 
 import javax.persistence.*;
 
