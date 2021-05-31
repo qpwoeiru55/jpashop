@@ -26,6 +26,7 @@ public class JpaMain {
             book.setAuthor("이진석");
             em.persist(book);
 
+
             tx.commit();
         }catch(Exception e){
             tx.rollback();
